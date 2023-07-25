@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Kasir Auto</title>
+</head>
+<body>
+	<audio src="lagu.mp3" autoplay="autoplay"></audio>
+<style>
+body {
+	background-image:url("Wallp.png"); 
+	background-repeat:no-repeat;
+}
+</style>
+	<div class="container">
+	<font color="black" style="Times New Roman" size="5">
+	<pre>
+		<select id="nama1" onchange="satu(this)">
+<option value="0">- Pilih Barang -</option>
+<option value="10000">Xiaomi Redmi 4A</option>
+<option value="20000">Xiaomi Redmi 5</option>
+<option value="30000">Xiaomi Redmi 5 Plus</option>
+<option value="40000">Xiaomi Mi 5s</option>
+<option value="50000">Xiaomi Mi Max</option>
+			RP.<input type="text" name="barang4" id="barang1" value="" size="9" readonly> <input type="number" name="jumlah_barang1" id="harga_barang1" size="9" value="0" onchange="total()">
+			<br>
+
+		<select id="nama2" onchange="satu()">
+<option value="0">- Pilih Barang -</option>
+<option value="10000">Xiaomi Redmi 4A</option>
+<option value="20000">Xiaomi Redmi 5</option>
+<option value="30000">Xiaomi Redmi 5 Plus</option>
+<option value="40000">Xiaomi Mi 5s</option>
+<option value="50000">Xiaomi Mi Max</option>
+			RP.<input type="text" name="barang" id="barang2" size="9" readonly> <input type="number" name="jumlah_barang2" id="harga_barang2" size="9" value="0" onchange="total()">
+			<br>
+
+		<select id="nama3" onchange="satu()">
+<option value="0">- Pilih Barang -</option>
+<option value="10000">Xiaomi Redmi 4A</option>
+<option value="20000">Xiaomi Redmi 5</option>
+<option value="30000">Xiaomi Redmi 5 Plus</option>
+<option value="40000">Xiaomi Mi 5s</option>
+<option value="50000">Xiaomi Mi Max</option>
+			RP.<input type="text" name="barang" id="barang3" size="9" readonly> <input type="number" name="jumlah_barang3" id="harga_barang3" size="9" value="0" onchange="total()">
+			<br><br>
+
+		          Jumlah Total RP.<input type="text" name="total_jumlah" id="total" size="7" value="" readonly> 
+
+	</pre>	
+
+		<script type="text/javascript">
+
+		function satu(){
+			var data1 = document.getElementById("nama1").value;
+			document.getElementById("barang1").value=data1;
+			
+			var data2 = document.getElementById("nama2").value;
+			document.getElementById("barang2").value=data2;
+			
+			var data3 = document.getElementById("nama3").value;
+			document.getElementById("barang3").value=data3;
+			}
+		function total() {
+		
+			var vbarang1 = document.getElementById('barang1').value * parseInt(document.getElementById('harga_barang1').value);
+			var vbarang2 = document.getElementById('barang2').value * parseInt(document.getElementById('harga_barang2').value);
+			var vbarang3 = document.getElementById('barang3').value * parseInt(document.getElementById('harga_barang3').value);
+
+			var jumlah_harga = vbarang1 + vbarang2 + vbarang3;
+
+		document.getElementById('total').value = jumlah_harga;
+		}	
+		
+		</script>
+	</div>
+</body>
+</html>
