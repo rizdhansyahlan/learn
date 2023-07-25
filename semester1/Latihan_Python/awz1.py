@@ -1,0 +1,10 @@
+kAldi = int(input("Masukkan Jumlah Kelereng Aldi : "))
+kBudi = kAldi - 15
+kAnto = 2 * (kAldi + kBudi)
+kAgung = (kAldi + kBudi + kAnto) - 5
+print("Jumlah Kelereng Aldi = ",kAldi)
+print("Jumlah Kelereng Budi = ",kBudi)
+print("Jumlah Kelereng Anto = ",kAnto)
+print("Jumlah Kelereng Agung = ",kAgung)
+jumlah = (kBudi + kAnto + kAgung)
+print("Jumlah Kelereng Budi, Anto dan Agung = ",jumlah)

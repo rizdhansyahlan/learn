@@ -1,0 +1,2 @@
+import perpustakaan_v14 as Program_Perpustakaan
+Program_Perpustakaan.Perpustakaan()
